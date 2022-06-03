@@ -1,12 +1,12 @@
 //create fizzbuzz
 //create for loop which runs 100 times
-var fizzValue = 3;
-var buzzValue = 5;
-var fizzbuzzValue = 15;
+var fizzValue = 3; //define the first value
+var buzzValue = 5; //define the second value
+var fizzbuzzValue = (fizzValue * buzzValue); //multiply the variables so that fizzbuzzValue is automatically updated
 
-for(i = 1; i <= 100; i++)
+for(i = 1; i <= 100; i++) //for loop runs 100 times
 {
-    if(i % fizzbuzzValue === 0)
+    if(i % fizzbuzzValue === 0) //if i is a multiple of fizzvalue and buzzvalue (15 by default), log FizzBuzz
     {
         console.log("FizzBuzz");
     }
@@ -20,6 +20,6 @@ for(i = 1; i <= 100; i++)
     }
     else
     {
-        console.log(i);
+        console.log(i); //log i if it is not a multiple of any provided value
     }
 }
